@@ -104,7 +104,7 @@ export default function AdminDashboard() {
               <FileText size={14} className="mr-2" /> Excel
             </a>
           </div>
-        </header>
+        
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
           <div className="card p-5 animate-fade-in animate-stagger-1">
