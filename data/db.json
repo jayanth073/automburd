@@ -1,0 +1,358 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "name": "Demo Employee",
+      "email": "emp@demo.com",
+      "password": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f",
+      "role": "EMPLOYEE",
+      "managerId": "u2"
+    },
+    {
+      "id": "u2",
+      "name": "Demo Manager",
+      "email": "mgr@demo.com",
+      "password": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f",
+      "role": "MANAGER",
+      "managerId": "u3"
+    },
+    {
+      "id": "u3",
+      "name": "Demo Admin",
+      "email": "admin@demo.com",
+      "password": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f",
+      "role": "ADMIN",
+      "managerId": null
+    },
+    {
+      "id": "u4",
+      "name": "Priya Sharma",
+      "email": "priya@demo.com",
+      "password": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f",
+      "role": "EMPLOYEE",
+      "managerId": "u2"
+    },
+    {
+      "id": "u5",
+      "name": "Rahul Verma",
+      "email": "rahul@demo.com",
+      "password": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f",
+      "role": "EMPLOYEE",
+      "managerId": "u2"
+    },
+    {
+      "id": "u6",
+      "name": "Anjali Desai",
+      "email": "anjali@demo.com",
+      "password": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f",
+      "role": "EMPLOYEE",
+      "managerId": "u2"
+    },
+    {
+      "id": "u7",
+      "name": "Karan Singh",
+      "email": "karan@demo.com",
+      "password": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f",
+      "role": "EMPLOYEE",
+      "managerId": "u2"
+    }
+  ],
+  "goalCycles": [
+    {
+      "id": "c1",
+      "name": "FY2026-Q1",
+      "quarter": "Q1",
+      "windowOpen": "2026-05-01",
+      "windowClose": "2026-05-31",
+      "isActive": true
+    },
+    {
+      "id": "c2",
+      "name": "FY2026-Q2",
+      "quarter": "Q2",
+      "windowOpen": "2026-08-01",
+      "windowClose": "2026-08-31",
+      "isActive": false
+    },
+    {
+      "id": "c3",
+      "name": "FY2026-Q3",
+      "quarter": "Q3",
+      "windowOpen": "2026-11-01",
+      "windowClose": "2026-11-30",
+      "isActive": false
+    },
+    {
+      "id": "c4",
+      "name": "FY2026-Q4",
+      "quarter": "Q4",
+      "windowOpen": "2027-02-01",
+      "windowClose": "2027-02-28",
+      "isActive": false
+    }
+  ],
+  "goals": [
+    {
+      "id": "g1",
+      "employeeId": "u1",
+      "cycleId": "c1",
+      "thrustArea": "Revenue",
+      "title": "Quarterly Sales Target",
+      "description": "Achieve $1M in new contract value",
+      "uomType": "NUMERIC_MIN",
+      "target": "1000000",
+      "weightage": 40,
+      "status": "APPROVED",
+      "isLocked": true,
+      "isShared": false,
+      "createdAt": "2026-05-10T10:00:00Z"
+    },
+    {
+      "id": "g2",
+      "employeeId": "u1",
+      "cycleId": "c1",
+      "thrustArea": "Operational Excellence",
+      "title": "Reduce Server Latency",
+      "description": "Decrease p99 latency to under 200ms",
+      "uomType": "NUMERIC_MAX",
+      "target": "200",
+      "weightage": 25,
+      "status": "APPROVED",
+      "isLocked": true,
+      "isShared": false,
+      "createdAt": "2026-05-10T10:05:00Z"
+    },
+    {
+      "id": "g3",
+      "employeeId": "u1",
+      "cycleId": "c1",
+      "thrustArea": "Safety",
+      "title": "Zero Critical Incidents",
+      "description": "Zero security breaches or data loss events",
+      "uomType": "ZERO",
+      "target": "0",
+      "weightage": 25,
+      "status": "APPROVED",
+      "isLocked": true,
+      "isShared": false,
+      "createdAt": "2026-05-10T10:10:00Z"
+    },
+    {
+      "id": "g4",
+      "employeeId": "u4",
+      "cycleId": "c1",
+      "thrustArea": "Customer Success",
+      "title": "NPS Score Improvement",
+      "description": "Increase NPS from 65 to 75",
+      "uomType": "NUMERIC_MIN",
+      "target": "75",
+      "weightage": 50,
+      "status": "SUBMITTED",
+      "isLocked": false,
+      "createdAt": "2026-05-11T09:00:00Z"
+    },
+    {
+      "id": "g5",
+      "employeeId": "u4",
+      "cycleId": "c1",
+      "thrustArea": "Innovation",
+      "title": "New Product Patents",
+      "description": "File at least 2 new product patents",
+      "uomType": "NUMERIC_MIN",
+      "target": "2",
+      "weightage": 50,
+      "status": "DRAFT",
+      "isLocked": false,
+      "createdAt": "2026-05-11T09:15:00Z"
+    },
+    {
+      "id": "g6",
+      "employeeId": "u5",
+      "cycleId": "c1",
+      "thrustArea": "Revenue",
+      "title": "Enterprise Deals",
+      "description": "Close 5 enterprise deals",
+      "uomType": "NUMERIC_MIN",
+      "target": "5",
+      "weightage": 100,
+      "status": "APPROVED",
+      "isLocked": true,
+      "isShared": false,
+      "createdAt": "2026-05-12T10:00:00Z"
+    },
+    {
+      "id": "g7",
+      "employeeId": "u4",
+      "cycleId": "c1",
+      "thrustArea": "Customer Success",
+      "title": "Customer Retention",
+      "description": "Maintain 95% retention rate for Q1",
+      "uomType": "NUMERIC_MIN",
+      "target": "95",
+      "weightage": 30,
+      "status": "DRAFT",
+      "isLocked": false,
+      "isShared": false,
+      "createdAt": "2026-05-17T06:43:12.849Z"
+    },
+    {
+      "id": "g8",
+      "employeeId": "u6",
+      "cycleId": "c1",
+      "thrustArea": "Innovation",
+      "title": "Process Automation",
+      "description": "Automate 3 manual marketing processes",
+      "uomType": "NUMERIC_MIN",
+      "target": "3",
+      "weightage": 60,
+      "status": "SUBMITTED",
+      "isLocked": false,
+      "isShared": false,
+      "createdAt": "2026-05-17T06:43:12.849Z"
+    },
+    {
+      "id": "g9",
+      "employeeId": "u6",
+      "cycleId": "c1",
+      "thrustArea": "Revenue",
+      "title": "Marketing Leads",
+      "description": "Generate 500 qualified leads",
+      "uomType": "NUMERIC_MIN",
+      "target": "500",
+      "weightage": 40,
+      "status": "SUBMITTED",
+      "isLocked": false,
+      "isShared": false,
+      "createdAt": "2026-05-17T06:43:12.849Z"
+    },
+    {
+      "id": "g10",
+      "employeeId": "u7",
+      "cycleId": "c1",
+      "thrustArea": "Operational Excellence",
+      "title": "Cloud Cost Optimization",
+      "description": "Reduce AWS bill by 15%",
+      "uomType": "NUMERIC_MIN",
+      "target": "15",
+      "weightage": 100,
+      "status": "APPROVED",
+      "isLocked": true,
+      "isShared": false,
+      "createdAt": "2026-05-17T06:43:12.849Z"
+    },
+    {
+      "id": "g11",
+      "employeeId": "u1",
+      "cycleId": "c1",
+      "thrustArea": "Team Dev",
+      "title": "Mentorship",
+      "description": "Mentor 2 junior developers",
+      "uomType": "NUMERIC_MIN",
+      "target": "2",
+      "weightage": 10,
+      "status": "APPROVED",
+      "isLocked": true,
+      "isShared": false,
+      "createdAt": "2026-05-17T06:43:12.849Z"
+    }
+  ],
+  "checkIns": [
+    {
+      "id": "ci1",
+      "goalId": "g1",
+      "employeeId": "u1",
+      "quarter": "Q1",
+      "actualAchievement": "850000",
+      "progressStatus": "ON_TRACK",
+      "computedScore": 0.85,
+      "createdAt": "2026-07-15T10:00:00Z"
+    },
+    {
+      "id": "ci2",
+      "goalId": "g2",
+      "employeeId": "u1",
+      "quarter": "Q1",
+      "actualAchievement": "180",
+      "progressStatus": "ON_TRACK",
+      "computedScore": 1.11,
+      "createdAt": "2026-07-15T10:05:00Z"
+    },
+    {
+      "id": "ci3",
+      "goalId": "g10",
+      "employeeId": "u7",
+      "quarter": "Q1",
+      "actualAchievement": "10",
+      "progressStatus": "ON_TRACK",
+      "computedScore": 0.66,
+      "managerComment": "Good progress so far.",
+      "createdAt": "2026-05-17T06:43:12.849Z"
+    },
+    {
+      "id": "ci4",
+      "goalId": "g11",
+      "employeeId": "u1",
+      "quarter": "Q1",
+      "actualAchievement": "1",
+      "progressStatus": "ON_TRACK",
+      "computedScore": 0.5,
+      "createdAt": "2026-05-17T06:43:12.849Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "log-1",
+      "goalId": "g1",
+      "userId": "u1",
+      "userName": "Demo Employee",
+      "goalTitle": "Quarterly Sales Target",
+      "changeType": "CREATED",
+      "oldValue": "",
+      "newValue": "Goal created",
+      "changedAt": "2026-05-10T10:00:00Z"
+    }
+  ],
+  "notifications": {
+    "emails": [],
+    "teams": []
+  },
+  "escalations": [],
+  "escalationRules": [
+    {
+      "id": "rule-1",
+      "name": "Goal Submission Overdue",
+      "condition": "GOAL_NOT_SUBMITTED",
+      "daysThreshold": 7,
+      "escalationChain": [
+        "EMPLOYEE",
+        "MANAGER",
+        "HR"
+      ],
+      "isActive": true
+    },
+    {
+      "id": "rule-2",
+      "name": "Goal Approval Overdue",
+      "condition": "GOAL_NOT_APPROVED",
+      "daysThreshold": 5,
+      "escalationChain": [
+        "MANAGER",
+        "SKIP_LEVEL",
+        "HR"
+      ],
+      "isActive": true
+    },
+    {
+      "id": "rule-3",
+      "name": "Quarterly Check-in Overdue",
+      "condition": "CHECKIN_NOT_COMPLETED",
+      "daysThreshold": 3,
+      "escalationChain": [
+        "EMPLOYEE",
+        "MANAGER",
+        "HR"
+      ],
+      "isActive": true
+    }
+  ]
+}
