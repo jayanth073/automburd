@@ -54,7 +54,7 @@ body {
 
 @layer components {
   .btn-primary {
-    @apply inline-flex items-center justify-center px-4 py-2 bg-surface-900 text-white font-medium text-sm rounded-lg shadow-sm hover:bg-surface-900 active:bg-surface-950 transition-colors;
+    @apply inline-flex items-center justify-center px-4 py-2 bg-surface-900 text-white font-medium text-sm rounded-lg shadow-sm hover:bg-surface-800 active:bg-surface-900 transition-colors;
   }
 
   .btn-secondary {

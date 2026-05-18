@@ -260,7 +260,6 @@ export default function AdminDashboard() {
 
           <div className="space-y-8">
             <section className="card overflow-hidden animate-fade-in">
-            <section className="card overflow-hidden animate-fade-in">
               <div className="px-5 py-4 border-b border-surface-200 bg-surface-50/50">
                 <h2 className="text-sm font-semibold text-surface-900">Push Global KPI</h2>
                 <p className="text-xs text-surface-500 mt-1">Disseminate goal to all employees</p>
